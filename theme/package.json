@@ -1,0 +1,56 @@
+{
+    "name": "slidev-theme-geist",
+    "version": "0.8.1",
+    "homepage": "https://github.com/nico-bachner/slidev-theme-geist#readme",
+    "bugs": {
+        "url": "https://github.com/nico-bachner/slidev-theme-geist/issues"
+    },
+    "author": {
+        "name": "Nico Bachner",
+        "email": "yo@nicob.dev",
+        "url": "https://nicob.dev/"
+    },
+    "license": "MIT",
+    "keywords": [
+        "slidev-theme",
+        "slidev"
+    ],
+    "engines": {
+        "node": ">=14",
+        "slidev": ">=0.20"
+    },
+    "slidev": {
+        "aspectRatio": "16/9",
+        "colorSchema": "both",
+        "highlighter": "all",
+        "default": {
+            "fonts": {
+                "sans": "Inter",
+                "mono": "Menlo"
+            },
+            "highlighter": "shiki"
+        }
+    },
+    "scripts": {
+        "dev": "slidev example.md",
+        "build": "slidev build example.md",
+        "export": "slidev export example.md",
+        "screenshot": "slidev export example.md --format png",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "format": "prettier --write components/*.vue layouts/* styles.css",
+        "release": "standard-version"
+    },
+    "dependencies": {
+        "@slidev/types": "^0.28.9",
+        "codemirror-theme-vars": "^0.1.1",
+        "prism-theme-vars": "^0.2.2"
+    },
+    "devDependencies": {
+        "@slidev/cli": "^0.28.9",
+        "playwright-chromium": "^1.19.2",
+        "prettier": "^2.5.1",
+        "standard-version": "^9.3.2",
+        "vitepress": "^0.22.3"
+    }
+}
