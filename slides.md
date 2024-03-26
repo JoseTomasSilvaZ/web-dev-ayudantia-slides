@@ -196,8 +196,8 @@ level:2
 Herramienta de CSS que permite ordenar los elementos de un contenedor en columnas o filas. Además <br/>
 de permitir controlar su espaciado y comportamiento.
 
-<div class='grid grid-cols-2 gap-10 items-center'>
-  <div>
+<div class='grid grid-cols-3 gap-10 items-center'>
+  <div class='col-span-2'>
 
   ### Display y direction
   Lo escencial para asignarle el comportamiento flex a un contenedor. <br/>
@@ -210,7 +210,7 @@ de permitir controlar su espaciado y comportamiento.
   }
   ```
   </div>
-<img src='https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg'></img>
+<img src='https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg' class=''></img>
 </div>
 
 
@@ -254,8 +254,8 @@ level:2
 # Más propiedades de flex
 
 
-<div class='grid grid-cols-2 gap-10 items-start '>
-  <div>
+<div class='grid grid-cols-3 gap-5 items-start '>
+  <div class='col-span-2'>
 
   ### Justify content
   Permite controlar el espaciado entre los childs del contenedor sobre el eje principal. <br/>
@@ -270,7 +270,7 @@ level:2
   ```
  
   </div>
-<img src='https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg' class='h-2/3 w-full'></img>
+<img src='https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg' class='h-[90%] w-full'></img>
 </div>
 
 
@@ -282,8 +282,8 @@ level:2
 # Más propiedades de flex
 
 
-<div class='grid grid-cols-2 gap-10 items-start '>
-  <div>
+<div class='grid grid-cols-3 gap-10 items-start '>
+  <div class='col-span-2'>
 
   ### Align items
   Permite controlar como se distribuyen los childs del contenedor sobre el eje secundario. <br/>
@@ -298,7 +298,7 @@ level:2
   ```
  
   </div>
-<img src='https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg' class='h-2/3 w-full'></img>
+<img src='https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg' class='h-full w-full'></img>
 </div>
 
 
@@ -328,7 +328,7 @@ level:2
   ```
  
   </div>
-<img src='https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg' class='h-2/3 w-full'></img>
+<img src='https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg' class='h-[80%] w-full'></img>
 </div>
 
 
@@ -354,7 +354,7 @@ Entrega una serie de estilos y utilidades para optimizar el tiempo de desarrollo
 layout: default
 ---
 
-# Cómo estilar componentes comunes con Bootstrap
+# Importar bootstrap en nuestro proyecto
 
 ```html
 
@@ -373,6 +373,87 @@ layout: default
 </html>
 
 ```
+---
+layout:default
+level:2
+---
+
+# Flexbox con bootstrap
+
+Bootstrap nos entrega "utility classes" para representar CSS a través de clases.
+
+
+  ### Declarar un contenedor flex con bootstrap
+
+  ```html
+  <!-- Declarar un contenedor flex, con dirección row -->
+    <div class='d-flex flex-row'>
+      <div>child 1</div>
+      <div>child 2</div>
+      <div>child 3</div>
+    </div>
+
+     <!-- Declarar un contenedor flex, con dirección column -->
+    <div class='d-flex flex-column'>
+      <div>child 1</div>
+      <div>child 2</div>
+      <div>child 3</div>
+    </div>
+  ```
+[Documentación Flex](https://getbootstrap.com/docs/5.3/utilities/flex)
+
+
+---
+layout:default
+level:2
+---
+
+# Flexbox con bootstrap
+
+Aplicando propiedades de flex con bootstrap
+
+
+  ### Utilizando propiedades de justify content
+
+  ```html
+    <div class="d-flex justify-content-start">...</div>
+    <div class="d-flex justify-content-end">...</div>
+    <div class="d-flex justify-content-center">...</div>
+    <div class="d-flex justify-content-between">...</div>
+    <div class="d-flex justify-content-around">...</div>
+    <div class="d-flex justify-content-evenly">...</div>
+  ```
+[Documentación Justify Content](https://getbootstrap.com/docs/5.3/utilities/flex/#justify-content)
+
+  ### Utilizando propiedades de align items
+
+  ```html
+    <div class="d-flex align-items-start">...</div>
+    <div class="d-flex align-items-end">...</div>
+    <div class="d-flex align-items-center">...</div>
+    <div class="d-flex align-items-baseline">...</div>
+    <div class="d-flex align-items-stretch">...</div>
+  ```
+[Documentación Align Items](https://getbootstrap.com/docs/5.3/utilities/flex/#align-items)
+
+
+
+---
+layout:default
+level:2
+---
+
+# Playground flexbox bootstrap 
+
+  
+<iframe height="400" style="width: 100%;" scrolling="no" title="Ayudantia 2 - Playground flexbox en bootstrap" src="https://codepen.io/Agatsuma_/embed/zYXdYzO?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Agatsuma_/pen/zYXdYzO">
+  Ayudantia 2 - Playground flexbox en bootstrap</a> by José Tomás (<a href="https://codepen.io/Agatsuma_">@Agatsuma_</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+[Playground Link](https://codepen.io/Agatsuma_/pen/zYXdYzO)
+
 
 ---
 level: 2
@@ -380,7 +461,7 @@ level: 2
 
 # Creando componentes con Bootstrap
 Clickea en Edit on codepen para ir directamente al sitio para editar el código.
-<iframe  style="width: 100%; height:80%;" scrolling="no" title="Ayudantia 2 - Bootstrap example" src="https://codepen.io/Agatsuma_/embed/YzMVgaE?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe  style="width: 100%; height:80%;" scrolling="no" title="Ayudantia 2 - Bootstrap example" src="https://codepen.io/Agatsuma_/embed/YzMVgaE?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/Agatsuma_/pen/YzMVgaE">
   Ayudantia 2 - Bootstrap example</a> by José Tomás (<a href="https://codepen.io/Agatsuma_">@Agatsuma_</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -390,337 +471,3 @@ Clickea en Edit on codepen para ir directamente al sitio para editar el código.
 
 ---
 
-# Componentes típicos de Bootstrap
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn More](https://sli.dev/guide/animations#click-animations)
-
-</div>
-
----
-preload: false
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Moanco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import hello from './external'
-
-const code = ref('const a = 1')
-hello()
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-function fibonacci(n: number): number {
-  return n <= 1
-    ? n
-    : fibonacci(n - 1) + fibonacci(n - 2) // you know, this is NOT the best way to do it :P
-}
-
-console.log(Array.from({ length: 10 }, (_, i) => fibonacci(i + 1)))
-```
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
