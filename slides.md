@@ -1,36 +1,20 @@
 ---
-# try also 'default' to start simple
 theme: default
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-# some information about your slides, markdown enabled
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply any unocss classes to the current slide
+title: Webdev - Ayudantia 2
+info:
 class: text-center
-# https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# https://sli.dev/guide/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
+
 mdc: true
 ---
 
 # Ayudantía 2 - Webdev
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
 
 ---
-transition: fade-out
 layout: default
 ---
 
@@ -69,12 +53,7 @@ h1 {
 }
 </style>
 
-<!--
-Here is another comment.
--->
-
 ---
-transition: slide-up
 level: 2
 
 ---
@@ -104,9 +83,7 @@ const lopezFamily = names.map(name => `${name} Lopez`)
 
 
 ---
-transition: slide-up
 level: 2
-
 ---
 
 # Objetos
@@ -135,9 +112,7 @@ product.color = 'Green'
 
 
 ---
-transition: slide-up
 level: 2
-
 ---
 
 # Manipulación del dom
@@ -476,5 +451,4 @@ Clickea en Edit on codepen para ir directamente al sitio para editar el código.
 
 <img src='/assets/images/meow.webp' class='h-2/3 mx-auto' />
 
----
 
