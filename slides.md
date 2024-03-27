@@ -37,21 +37,7 @@ const myCat = {
   talk: () => console.log('Meow')
 }
 
-
 ```
-
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
 
 ---
 level: 2
@@ -88,8 +74,8 @@ level: 2
 
 # Objetos
 
-Existen múltiples métodos, estos son algunos de ellos. Para más información: <br/>
-[Mdn docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+ <br/>
+
 ```js twoslash
 const product = {
   name: 'Apple',
@@ -160,6 +146,7 @@ firstSection.appendChild(newSpan)
 ```
 </div>
 
+[Snippet](https://codepen.io/Agatsuma_/pen/abxyqxM)
 
 ---
 layout:default
@@ -175,7 +162,7 @@ de permitir controlar su espaciado y comportamiento.
   <div class='col-span-2'>
 
   ### Display y direction
-  Lo escencial para asignarle el comportamiento flex a un contenedor. <br/>
+  Lo esencial para asignarle el comportamiento flex a un contenedor. <br/>
   Para darle una dirección, utilizar flex-direction
 
   ```css
@@ -428,6 +415,37 @@ level:2
 </iframe>
 
 [Playground Link](https://codepen.io/Agatsuma_/pen/zYXdYzO)
+
+---
+layout:default
+level:2
+---
+
+# Breakpoints con bootstrap
+
+Bootstrap nos entrega utilidades en múltiples utility classes para decidir cómo se comportan los elementos según
+la dimensión de la pantalla del usuario.
+
+```html
+  <!-- Contenedor flex, por defecto con dirección row, pero desde breakpoint md, dirección column -->
+    <div class="d-flex flex-md-column">...</div>
+
+    <!-- Contenedor flex, por defecto dirección row, en dispositivos pequeños
+      con distribución justify-content-between, y desde breakpoint md, distribución justify-content-evenly
+    -->
+    <div class="d-flex justify-content-between justify-content-md-evenly">...</div>
+```
+
+[Docs](https://getbootstrap.com/docs/5.3/utilities/flex/)
+
+  <br/>
+```html
+  <!-- Mostrar contenedor en dispositivos pequeños, pero no desde dispositivos medianos -->
+    <div class="d-block d-md-none">...</div>
+
+```
+
+[Docs](https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements)
 
 
 ---
