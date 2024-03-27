@@ -305,7 +305,7 @@ Entrega una serie de estilos y utilidades para optimizar el tiempo de desarrollo
 <img src='https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg' class='size-32 object-contain'/>
 <div>
 
-<img src='assets/images/hero-example.png' class='h-64 rounded-md'/>
+<img src='/assets/images/hero-example.png' class='h-64 rounded-md'/>
 <small class='opacity-50 text-xs'>Hero component hecho con bootstrap</small>
 </div>
 
@@ -446,7 +446,6 @@ la dimensión de la pantalla del usuario.
 ```
 
 [Docs](https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements)
-
 
 ---
 level: 2
