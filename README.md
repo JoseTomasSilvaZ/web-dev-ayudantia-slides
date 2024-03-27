@@ -1,6 +1,6 @@
 # ✨ Ayudantía 2
 
-## Para correr la presentación:
+## Para correr la presentación
 
 En primera instancia, clona el repositorio en tu máquina
 
@@ -25,4 +25,16 @@ Corre el proyecto
 
 ```bash
   npm run dev
+```
+
+## Extras
+
+Para exportar la presentación como PDF
+
+```bash
+  # Light mode
+  npm run export
+
+  #Dark mode
+  npm run export -- --dark
 ```
