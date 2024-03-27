@@ -5,7 +5,7 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export --dark"
   },
   "dependencies": {
     "@slidev/cli": "^0.48.7",
@@ -13,5 +13,8 @@
     "@slidev/theme-seriph": "latest",
     "slidev-theme-geist": "^0.8.1",
     "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.42.1"
   }
 }
