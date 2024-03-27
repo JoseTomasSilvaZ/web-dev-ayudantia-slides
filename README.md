@@ -1,11 +1,28 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# ✨ Ayudantía 2
 
-To start the slide show:
+## Para correr la presentación:
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+En primera instancia, clona el repositorio en tu máquina
 
-Edit the [slides.md](./slides.md) to see the changes.
+```bash
+  git clone https://github.com/JoseTomasSilvaZ/web-dev-ayudantia-slides.git
+```
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+Cámbiate a la rama de esta ayudantía
+
+```bash
+  cd web-dev-ayudantia-slides
+  git checkout <nombre-de-la-rama>
+```
+
+Instala las dependencias
+
+```bash
+  npm install
+```
+
+Corre el proyecto
+
+```bash
+  npm run dev
+```
