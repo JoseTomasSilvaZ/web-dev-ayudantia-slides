@@ -1,5 +1,5 @@
 # ✨ Ayudantía 2
-[Clickea aquí para ver la presentación] (https://web-dev-ayudantia-slides.vercel.app/1)
+[Clickea aquí para ver la presentación](https://web-dev-ayudantia-slides.vercel.app/1)
 
 ## Para correr la presentación
 
