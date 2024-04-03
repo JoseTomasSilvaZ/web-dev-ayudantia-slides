@@ -1,6 +1,6 @@
 ---
 theme: default
-title: Webdev - Ayudantia 2
+title: Webdev - Ayudantia 3
 info:
 class: text-center
 highlighter: shiki
@@ -11,7 +11,7 @@ transition: slide-left
 mdc: true
 ---
 
-# Ayudantía 2 - Webdev
+# Ayudantía 3 - Webdev
 
 ---
 src: ./pages/2.md
