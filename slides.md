@@ -11,12 +11,14 @@ transition: slide-left
 mdc: true
 ---
 
-# Ayudantía 3 - Webdev
+# Ayudantía 4 - Webdev
+
 
 ---
-src: ./pages/2.md
+src: ./pages/1.md
 hide: false
 ---
+
 
 ---
 src: ./pages/3.md
@@ -38,12 +40,25 @@ src: ./pages/6.md
 hide: false
 ---
 
-
 ---
 src: ./pages/7.md
 hide: false
 ---
 
+---
+src: ./pages/8.md
+hide: false
+---
+
+---
+src: ./pages/9.md
+hide: false
+---
+
+---
+src: ./pages/10.md
+hide: false
+---
 ---
 
 # CHAITOS
