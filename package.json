@@ -2,19 +2,24 @@
   "name": "ayudantia-2",
   "type": "module",
   "private": true,
+  "version": "1.1.1",
   "scripts": {
     "build": "slidev build",
-    "dev": "slidev --open",
+    "build:multiple": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "clean": "rm -rf index.html .site present/*/index.html present/*/dist",
     "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.48.7",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "slidev-theme-eloc": "^1.0.2",
     "slidev-theme-geist": "^0.8.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.42.1"
+    "playwright-chromium": "^1.42.1",
+    "zx": "^8.0.1"
   }
 }
