@@ -6,12 +6,6 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/.site/$1"
-    }
-  ],
   "buildCommand": "npm run build:multiple",
   "outputDirectory": ".site",
   "cleanUrls": true
