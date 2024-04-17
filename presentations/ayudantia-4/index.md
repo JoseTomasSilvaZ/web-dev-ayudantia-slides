@@ -64,6 +64,3 @@ hide: false
 # CHAITOS
 
 
-<img src='/assets/images/meow.webp' class='h-2/3 mx-auto' />
-
-

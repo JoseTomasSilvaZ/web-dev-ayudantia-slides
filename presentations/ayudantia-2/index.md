@@ -305,7 +305,6 @@ Entrega una serie de estilos y utilidades para optimizar el tiempo de desarrollo
 <img src='https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg' class='size-32 object-contain'/>
 <div>
 
-<img src='/assets/images/hero-example.png' class='h-64 rounded-md'/>
 <small class='opacity-50 text-xs'>Hero component hecho con bootstrap</small>
 </div>
 
@@ -464,8 +463,5 @@ Clickea en Edit on codepen para ir directamente al sitio para editar el código.
 ---
 
 # CHAITOS
-
-
-<img src='/assets/images/meow.webp' class='h-2/3 mx-auto' />
 
 
