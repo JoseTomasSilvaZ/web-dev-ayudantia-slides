@@ -50,7 +50,7 @@
 
 <span class="absolute bottom-5 text-xs right-5">
 
-> 💡 Hay muchas utilidades más, para aprender leer más información, clickea [aquí](https://handlebarsjs.com/guide/builtin-helpers.html#each)
+> 💡 Hay muchas utilidades más, para leer más información, clickea [aquí](https://handlebarsjs.com/guide/builtin-helpers.html#each)
 
 </span>
 </div>
