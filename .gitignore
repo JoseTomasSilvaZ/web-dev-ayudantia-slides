@@ -6,3 +6,5 @@ dist
 .remote-assets
 components.d.ts
 slides-export.pdf
+.site
+
