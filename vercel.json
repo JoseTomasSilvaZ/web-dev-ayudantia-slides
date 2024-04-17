@@ -1,7 +1,18 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "version": 2,
+  "builds": [
+    {
+      "src": ".site/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/.site/$1"
+    }
   ],
   "buildCommand": "npm run build:multiple",
-  "outputDirectory": "dist"
+  "outputDirectory": ".site",
+  "cleanUrls": true
 }
