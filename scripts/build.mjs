@@ -22,8 +22,7 @@ echo`[build] ${green(`found slides`)} ${yellow(`[
 
 // Build the main index slide
 echo("");
-
-fs.mkdirSync(".site");
+fs.mkdir(".site");
 fs.copyFileSync("index.html", ".site/index.html");
 
 // Build each individual slide
