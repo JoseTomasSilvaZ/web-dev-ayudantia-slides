@@ -1,38 +1,36 @@
-import { $, cd, fs, glob, echo, chalk } from 'zx';
+import { $, cd, fs, glob, echo, chalk } from "zx";
 
-const {
-  yellowBright: yellow,
-  greenBright: green,
-} = chalk;
+const { yellowBright: yellow, greenBright: green } = chalk;
 
-$.env.FORCE_COLOR = '1';
+$.env.FORCE_COLOR = "1";
 
 // Get all presentation directories
-const slideDirs = await glob('presentations/*', {
+const slideDirs = await glob("presentations/*", {
   onlyDirectories: true,
 });
 
 // Clear previous build artifacts
-echo('');
+echo("");
 echo`[slides] ${green(`Clear last building files`)}`;
 await $`rm -rf .site presentations/*/dist`;
 
 // Log found slide directories
-echo('');
+echo("");
 echo`[build] ${green(`found slides`)} ${yellow(`[
-  ${slideDirs.join(',\n  ')}
+  ${slideDirs.join(",\n  ")}
 ]`)}`;
 
 // Build the main index slide
-echo('');
-echo`[build] ${green(`Building index`)}`;
-await $`slidev build --out .site index.md`;
+echo("");
+
+fs.mkdirSync(".site");
+fs.copyFileSync("index.html", ".site/index.html");
 
 // Build each individual slide
 for (let dir of slideDirs) {
-  const slide = dir.replace('presentations/', '');
+  const slide = dir.replace("presentations/", "");
 
-  echo('');
+  echo("");
   echo`[build] ${green(`Building slide ${yellow(slide)}`)}`;
 
   // Change to the directory and run the build command
@@ -45,18 +43,18 @@ for (let dir of slideDirs) {
   }
 
   // Change back to the project root directory
-  await cd('../../');
+  await cd("../../");
 }
 
 // Compose slide pages by copying them to the .site directory
-echo('');
+echo("");
 echo`[build] ${green(`Composing slides pages`)}`;
 for (let dir of slideDirs) {
   const destDir = `.site/${dir}/`;
   const srcDir = `${dir}/dist/`;
 
   // Log file operation
-  echo `Copying ${srcDir} to ${destDir}`;
+  echo`Copying ${srcDir} to ${destDir}`;
   try {
     // Check if source directory exists and log contents
     const files = await fs.readdir(srcDir);
@@ -71,5 +69,5 @@ for (let dir of slideDirs) {
 }
 
 // Build completed
-echo('');
+echo("");
 echo`[build] Build completed`;
