@@ -7,7 +7,7 @@
     "build": "slidev build",
     "build:multiple": "node scripts/build.mjs",
     "dev": "node scripts/dev.mjs",
-    "clean": "rm -rf index.html .site present/*/index.html present/*/dist",
+    "clean": "rm -rf .site present/*/index.html present/*/dist",
     "export": "slidev export"
   },
   "dependencies": {

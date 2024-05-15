@@ -21,6 +21,9 @@ echo`[build] ${green(`found slides`)} ${yellow(`[
 ]`)}`;
 
 // Build the main index slide
+echo("");
+fs.mkdirSync(".site");
+fs.copyFileSync("index.html", ".site/index.html");
 
 // Build each individual slide
 for (let dir of slideDirs) {
@@ -42,9 +45,6 @@ for (let dir of slideDirs) {
   await cd("../../");
 }
 
-echo("");
-fs.mkdirSync(".site");
-fs.copyFileSync("index.html", ".site/index.html");
 // Compose slide pages by copying them to the .site directory
 echo("");
 echo`[build] ${green(`Composing slides pages`)}`;
