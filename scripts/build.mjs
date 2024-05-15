@@ -35,6 +35,7 @@ for (let dir of slideDirs) {
   // Change to the directory and run the build command
   await cd(dir);
   try {
+    await $`rm -rf dist index.html`;
     await $`slidev build --base /presentations/${slide}/ index.md`;
   } catch (error) {
     console.error(`Failed to build slides in ${dir}:`, error);
