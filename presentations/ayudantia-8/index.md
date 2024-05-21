@@ -31,5 +31,37 @@ info:
 <span class=" text-xs absolute bottom-4 right-10">José Tomás Silva</span>
 </div>
 
+---
+src: ./pages/topics.md
+hide: false
+---
 
+---
+src: ./pages/form-post.md
+hide: false
+---
 
+---
+src: ./pages/cookies.md
+hide: false
+---
+
+---
+src: ./pages/cookies-usage.md
+hide: false
+---
+
+---
+src: ./pages/jwt.md
+hide: false
+---
+
+---
+src: ./pages/cookiesjwt.md
+hide: false
+---
+
+---
+src: ./pages/wrapping-up.md
+hide: false
+---
