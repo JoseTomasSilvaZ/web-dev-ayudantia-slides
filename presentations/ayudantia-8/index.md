@@ -62,6 +62,12 @@ hide: false
 ---
 
 ---
+src: ./pages/register.md
+hide: false
+---
+
+
+---
 src: ./pages/wrapping-up.md
 hide: false
 ---
