@@ -1,6 +1,6 @@
 ---
 theme: default
-title: Webdev - Ayudantia 7
+title: Webdev - Ayudantia 8
 info:
   class: text-center
   highlighter: shiki
@@ -13,7 +13,7 @@ info:
 
 <div class="text-cente flex flex-col items-center justify-center h-full">
 
-# Ayudantía 7 - Webdev
+# Ayudantía 8 - Webdev
 
 <div class="flex gap-4 items-center justify-center">
 <div>
