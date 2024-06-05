@@ -10,5 +10,4 @@ if (slide) {
 } else {
   echo`Opening indexation of slides`;
 }
-
-await $`serve .`;
+await $`slidev index.md --log info --open`;
